@@ -1,0 +1,25 @@
+# Dependency directories
+node_modules/
+
+
+# Log files
+logs/
+*.log
+
+# Dependency lock files
+package-lock.json
+yarn.lock
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Compiled output
+dist/
+build/
+
+# Operating System Files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,39 @@
+<%- include('layout/header.ejs') %>
+<link rel="stylesheet" href="/stylesheets/index.css">
+  <body>
+    <% if(userLogin) { %>
+      <div class="todoForm">
+        <div id="userDetail">
+          <p id="userName">User Name</p>
+          <button class="btn btn-color px-5 mb-2 w-50" onclick="logout()" id="logout">Logout</button>
+      </div>
+        <form class="card-body cardbody-color p-lg-2" id="todoForm">
+          <div class="mb-2">
+            <input type="text" class="form-control" id="todo" name="todo" 
+              placeholder="Add Your Todo">
+            <input type="text" id="todoId" style="display: none;">
+          </div>
+          <div class="text-center"><button type="submit" class="btn btn-color px-5  w-100" id="addtodobtn">Add Todo</button></div>
+        </form>
+        <p id="checkTodo"></p>
+      </div>
+        <div class="todolist">
+          <ul class="list-group list-group-flush" id="todolistUl">
+      
+          </ul>
+          <ul class="pages" id="pages"></ul>
+          <div class="nav" id="pagination">
+          </div>
+        </div>
+      <% } else { %>
+
+        <div id="userDetail">
+          <p id="userName">User Name</p>
+          <button class="btn btn-color px-5 mb-5 w-50" onclick="logout()" id="logout">Logout</button>
+      </div>
+        <% } %>
+
+    <%- include('layout/footer.ejs') %>
+    <script src="/javascripts/index.js" async></script>
+  </body>
+</html>

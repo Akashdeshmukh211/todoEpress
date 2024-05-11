@@ -1,0 +1,81 @@
+.btn-color{
+    background-color: #0e1c36;
+    color: #fff;
+    
+  }
+ .btn-color:hover{
+  border: 1px solid #0e1c36;;
+ }
+  
+  .profile-image-pic{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+  }
+  
+  .error{
+    color: red;
+  }
+  
+  .cardbody-color{
+    background-color: #ebf2fa;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  .todoForm{
+    width: 450px;
+    margin: 0 auto;
+  }
+  .todolist{
+    width: 450px;
+    margin: 0 auto;
+  }
+  .todoItemli{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .todoItemli p{
+    flex-grow: 1;
+  }
+  .pbtn {
+    width: 70px;
+    height: 32px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+  }
+  .pbtn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  .prev {
+    background: #f08080;
+  }
+  .next {
+    background: #7b68ee;
+  }
+  .pages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 140px;
+    padding: 0 10px;
+    list-style-type: none;
+  }
+  .pages li{
+    cursor: pointer;
+  }
+  .active{
+    padding: 5px;
+    background-color: #f08080;
+  }
+  #pagination{
+    display: flex;
+    gap: 5px;
+  }
+  .hidden {
+    display: none;
+}
